@@ -27,9 +27,16 @@ GitHub Profile Finder is a simple React application that allows users to search 
 
 ```bash
 git clone https://github.com/your-username/github-profile-finder.git
+```
 
 2. Install dependencies
-    npm install
+
+```bash
+npm install
+```
 
 3. Start the development server
-    npm run dev
+
+```bash
+npm run dev
+```
