@@ -1,0 +1,174 @@
+/* Container spacing from header and repository section */
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Main Profile Card */
+.profile-card {
+  background-color: var(--card);
+  border: 1px solid var(--border-header);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Avatar styling */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--border-header);
+  object-fit: cover;
+}
+
+/* Details arrangement */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 1.75rem;
+  margin: 0;
+  color: var(--text-header);
+}
+
+.profile-bio {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.85; 
+}
+
+/* Statistics row */
+.profile-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 0.5rem 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-header);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+
+.view-profile {
+  display: inline-block;
+  align-self: flex-start; 
+  padding: 0.5rem 1rem;  
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: var(--text-header); 
+  color: var(--bg);                    
+  border: 1px solid transparent;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.view-profile:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.view-profile:active {
+  transform: scale(0.98);
+}
+.repos-section {
+  margin-top: 3rem;
+}
+
+.repos-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-header);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-header);
+  padding-bottom: 0.5rem;
+}
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Individual Repo Cards */
+.repo-card {
+  background-color: var(--card);
+  border: 1px solid var(--border-header);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.repo-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--icon-color);
+  text-decoration: none;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.no-repos {
+  color: var(--text);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .profile-stats {
+    justify-content: center;
+  }
+  
+  .view-profile {
+    align-self: center;
+  }
+}

@@ -1,0 +1,45 @@
+.app{
+    min-height:100vh;
+    transition:0.3s;
+}
+
+.light{
+    background:#f5f5f5;
+    color:#111;
+}
+
+.dark{
+    background:#0d1117;
+    color:white;
+}
+.light {
+  --bg:white;
+  --bg-header: #fdfafa;
+  --text-header: #1f2937;
+  --border-header: #e5e7eb;
+  --btn-hover: #f3f4f6;
+  --icon-color: #4b5563;
+  --card:white;
+  --text:#1f2937;
+}
+:root{
+  --bg:#0d1117;
+  --bg-header: #111827;
+  --text-header: #f9fafb;
+  --border-header: #374151;
+  --btn-hover: #1f2937;
+  --icon-color: #fbbf24; 
+  --card:#161b22;
+  --text:white;
+}
+
+/*.dark{
+  --bg:#0d1117;
+  --bg-header: #111827;
+  --text-header: #f9fafb;
+  --border-header: #374151;
+  --btn-hover: #1f2937;
+  --icon-color: #fbbf24; 
+  --card:#161b22;
+  --text:white;
+}*/

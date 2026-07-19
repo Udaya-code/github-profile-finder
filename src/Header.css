@@ -1,0 +1,47 @@
+body{
+  margin:0;
+}
+.header-container {
+  background-color: var(--bg-header);
+  border-bottom: 0.6px solid var(--border-header);
+  margin: 0;
+  padding: 0 1.1rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-header);
+  margin: 0;
+  transition: color 0.3s ease;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+.theme-toggle-btn {
+  background-color: var(--border-header);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.theme-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--icon-color);
+  transition: color 0.3s ease;
+}
